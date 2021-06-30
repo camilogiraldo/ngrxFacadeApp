@@ -1,0 +1,11 @@
+<div class="center-div">
+  <div *ngIf="isUserLogged">
+    <p>Welcome Back {{ user }}!</p>
+    <p>Your email is {{ email }}</p>
+    <img src="{{ avatar }}" alt="avatar" class="avatar" />
+  </div>
+  <div *ngIf="!isUserLogged">
+    <p>Please login</p>
+    <app-login></app-login>
+  </div>
+</div>
